@@ -1,6 +1,6 @@
 Name:       perl-srpm-macros    
 Version:    1
-Release:    7%{?dist}
+Release:    8%{?dist}
 Summary:    RPM macros for building Perl source package from source repository
 Group:      Development/Libraries
 License:    GPLv3+
@@ -19,6 +19,9 @@ install -m 644 -D "%{SOURCE0}" \
 %{_sysconfdir}/rpm/macros.perl-srpm
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1-8
+- Mass rebuild 2013-12-27
+
 * Thu Feb 28 2013 Ralf Corsépius <corsepiu@fedoraproject.org> - 1-7
 - Remove %%config from %%{_sysconfdir}/rpm/macros.*
   (https://fedorahosted.org/fpc/ticket/259).
